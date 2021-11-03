@@ -4,6 +4,11 @@
     padding: 15px 20px;
     cursor: pointer;
     border-radius: 8px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    &:hover{
+        box-shadow: 0px 0px 10px 2px #bebbbb;
+        transform: scale(0.99);
+    }
     h3{
         display: flex;
         justify-content: space-between;
@@ -12,4 +17,13 @@
 }
 .reminder{
         border-left: 4px solid green;
-    }
+}
+fa-icon{
+    padding: 0px 5px 0px 5px;
+    border-radius: 50%; 
+    border: 1px solid red;  
+    transition: transform ease .2s;
+    &:hover{
+        transform: scale(1.1);
+    } 
+}
